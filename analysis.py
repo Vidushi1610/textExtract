@@ -17,7 +17,7 @@ res = TextBlob(data)
 sid = SentimentIntensityAnalyzer()
 ss = sid.polarity_scores(data)
 
-#----------------------------------------------------------------------------#
+#-----------------------------------------------------------------------------#
 print('2.  POSITIVE SCORE', ss['pos']*100)
 print('3.  NEGAVTIVE SCORE', ss['neg']*100)
 print('4.  POLARITY SCORE', res.sentiment.polarity*100)
